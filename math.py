@@ -70,7 +70,7 @@ def main():
     plt.scatter(days, elo, alpha=0.5, label='Data')
     # Sort by days for a clean line plot
     idx = np.argsort(days)
-    plt.plot(days[idx], y_pred[idx], label='Least Squares Line')
+    plt.plot(days[idx], y_pred[idx], label='Least Squares Line',color='r')
     plt.xlabel("Days since first 2022 game")
     plt.ylabel("ELO")
     plt.title("Least Squares Fit: ELO vs Days)")
